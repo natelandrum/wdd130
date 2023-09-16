@@ -1,0 +1,33 @@
+.callout {
+    position: absolute;
+	width: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid #ffffff;
+    padding: 10px;
+    background-color: #224477;
+    color: aliceblue;
+}
+
+.callout img {
+	float: right;
+    margin: 0 0 5px 10px;
+    border: 1px solid black;
+    padding: 3px;
+    background-color: lightgray;
+    width: 100px;
+    height: auto;
+}
+
+blockquote {
+	margin: 0;
+}
+
+cite {
+	display: block;
+    border-top: 2px dotted lightgray;
+    padding-top: 5px;
+    text-align: right;
+    font-size: 11pt;
+}
