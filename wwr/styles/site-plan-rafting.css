@@ -1,1 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&family=Roboto&display=swap');
+:root {
+    --primary-color: #34312D;
+    --secondary-color: #F3F3F4;
+    --accent1-color: #D9C5B2;
+    --accent2-color: #7E7F83;
 
+    --heading-font: 'Roboto', sans-serif;;
+    --paragraph-font: 'PT Serif', serif;;
+
+    --nav-background-color: #D9C5B2;
+    --nav-link-color: #34312D;
+    --nav-hover-link-color: #F3F3F4;
+    --nav-hover-background-color: #7e7f83;
+}
+
+body {
+    font-family: var(--paragraph-font);
+    max-width: 960px;
+    padding: 20px;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+header {
+    padding: 20px;
+    background-color: var(--accent1-color);
+}
+p {
+    padding: 10px;
+}
+nav {
+    background-color: var(--nav-background-color);
+    font-size: 1.2rem;
+    display: flex;
+}
+nav a {
+    display: block;
+    color: var(--nav-link-color);
+    text-decoration: none;
+    padding: 1rem;
+}
+nav a:link, nav a:visited {
+color: var(--nav-link-color);
+}
+nav a:hover {
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);
+}
