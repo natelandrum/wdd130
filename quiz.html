@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 130 | HTML and CSS Quiz</title>
+    <meta name="author" content="Nathan Ray Landrum">
+    <meta name="description" content="A basic form that serves as a quiz.">
+    <link rel="stylesheet" href="styles/quiz.css">
+</head>
+<body>
+    <header>
+        <h1>WDD 130 | Nathan Landrum | HTML and CSS Quiz</h1>
+    </header>
+    <main>
+        <form>
+            <div class="form-item">
+                <label for="q1"><span>1. </span>What does HTML stand for?</label>
+                <input type="text" name="q1" id="q1">
+            </div>
+            <div class="form-item">
+                <label for="q2"><span>2. </span>Write the CSS to create a class named .highlight that changes the background color of any element with this class to yellow and makes the text color black.</label>
+                <textarea name="q2" id="q2" rows="4"></textarea>
+            </div>
+            <div class="form-item">
+                <label for="q3"><span>3. </span>What does the CSS property `margin: auto;` do when applied to a block-level element?</label>
+                <select name="q3" id="q3">
+                    <option value="" selected disabled>Choose One</option>
+                    <option value="chrome">It horizontally centers the block-level element within its containing parent element.</option>
+                    <option value="firefox"> It effectively distributes the remaining space evenly on both sides of the element.</option>
+                    <option value="safari">All of the above.</option>
+                </select>
+            </div>
+            <div class="form-item">
+                <label for="q4"><span>4. </span>What is the default value of the CSS opacity property?</label>
+                <input type="number" name="q4" id="q4">
+            </div>
+        <button type="submit">Submit Quiz</button>
+        </form>
+    </main>
+    <footer>
+        <p>©️2023 | HTML and CSS Quiz | Nathan Landrum</p>
+    </footer>
+</body>
+</html>
