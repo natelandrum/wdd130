@@ -57,6 +57,10 @@ footer {
     margin-top: 1rem;
     align-items: center;
 }
+footer a {
+    grid-column: 1/2;
+    text-align: left;
+}
 footer p {
     grid-column: 2/6;
 }
@@ -65,6 +69,55 @@ figure {
 }
 figcaption {
     text-align: center;
+}
+form {
+    width: 650px;
+    margin: 0 auto;
+    padding: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 1.5em;
+    background-color: #eee;
+    display: grid;
+}
+fieldset {
+    display: grid;
+    gap: .5rem;
+    margin: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+}
+legend {
+    padding: 0.5rem;
+    color: navy;
+    font-size: 1.3rem;
+}
+label, input, button, select, textarea {
+    font-family: var(--paragraph-font);
+}
+label {
+    text-align: right;
+    padding-right: 1rem;
+}
+input, select, textarea {
+    padding: 0.5rem;
+    font: 1.1rem;
+}
+input[type="checkbox"] {
+    width: 22px;
+    height: 22px;
+}
+button {
+    margin: auto;
+    background-color: navy;
+    color: white;
+    border: none;
+    border-radius: .5rem;
+    padding: .75rem;
+    font-size: 1.2rem;
+    width: fit-content;
+}
+button:hover {
+    background-color: darkgreen;
 }
 /* Class Selectors */
 .social {
@@ -104,7 +157,12 @@ figcaption {
 .hero article p {
     color: white;
 }
-.adventure img {
+.contact-info {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.horizontal-flex img {
     width: 500px;
 }
 .social img {
@@ -128,15 +186,50 @@ figcaption {
     height: 200px;
     width: auto;
 }
-.adventure div {
+.horizontal-flex div {
     display: flex;
     justify-content: center;
     margin-top: -1rem;
 }
-.adventure h2 {
+.horizontal-flex h2 {
     text-align: center;
 }
-.adventure div img {
+.horizontal-flex div img {
     width: 180px;
     height: auto;
+}
+.form-item {
+    display: grid;
+    text-align: center;
+
+}
+.column1 {
+    grid-template-columns: 3fr 1fr;
+    margin: 0.5rem 0;
+}
+.column2 {
+    grid-template-columns: 1fr 2fr;
+}
+.radio {
+    margin: 0.5rem 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.radio label {
+    text-align: right;
+    grid-column: 1/3;
+}
+.radio input {
+    grid-column: 3/4;
+}
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.flex-container h2 {
+    margin-bottom: -.5rem;
+}
+.flex-container p {
+    margin-bottom: 1rem;
 }
