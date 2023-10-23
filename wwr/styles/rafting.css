@@ -5,8 +5,8 @@
     --accent1-color: #F9F0E1;
     --accent2-color: #366DA6;
 
-    --heading-font: 'Roboto', sans-serif;;
-    --paragraph-font: 'PT Serif', serif;;
+    --heading-font: 'Roboto', sans-serif;
+    --paragraph-font: 'PT Serif', serif;
 
     --nav-background-color: #7D5A3B;
     --nav-link-color: #F9F0E1;
@@ -17,7 +17,7 @@
     margin: 0;
     padding: 0;
 }
-body {
+.width-1024 {
     width: 1024px;
     margin-left: auto;
     margin-right: auto;
@@ -39,6 +39,7 @@ p {
     padding: 10px;
 }
 header {
+    min-width: 1024px;
     display: grid;
     align-items: center;
 }
@@ -51,6 +52,7 @@ header nav {
     justify-content: space-around;
 }
 footer {
+    min-width: 1024px;
     display: grid;
     text-align: center;
     grid-template-columns: repeat(6, 1fr);
@@ -67,8 +69,8 @@ footer p {
 figure {
     margin: 1rem;
 }
-figcaption {
-    text-align: center;
+.flex-container figure img {
+    width: 355px;
 }
 form {
     width: 650px;
@@ -116,10 +118,38 @@ button {
     font-size: 1.2rem;
     width: fit-content;
 }
-button:hover {
+button:hover, .button:hover {
     background-color: darkgreen;
 }
+table {
+    font-size: larger;
+    margin: 0 auto;
+    width: 500px;
+    
+}
+th {
+    background-color: navy;
+    color: white;
+}
+td {
+    border: 2px solid rgba(0, 0, 0, 0.6);
+    padding: 5px 10px;
+}
+caption {
+    font-weight: bold;
+    font-size: x-large;
+}
+ul {
+    margin: 0 auto;
+    width: 500px; 
+}
+li {
+    margin: 1rem;
+}
 /* Class Selectors */
+.horizontal-flex figcaption {
+    text-align: center;
+}
 .social {
     grid-column: 6/7;
     text-align: left;
@@ -144,13 +174,13 @@ button:hover {
 .hero article {
     background-color: #0853a381;
     position: absolute;
-    width: 600px;
+    width: 675px;
     top: 120px;
     left: 50%;
     transform: translate(-50%, 0);
 }
 .hero article img {
-    width: 200px;
+    width: 250px;
     float: right;
     opacity: 0.6;
 }
@@ -226,10 +256,83 @@ button:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 1rem;
 }
 .flex-container h2 {
     margin-bottom: -.5rem;
 }
 .flex-container p {
+    text-align: left;
+    max-width: 400px;
+}
+.flex-container figcaption {
+    margin-top: 1rem;
+    width: 355px;
+    height: auto;
+}
+.button {
+    margin: 1rem;
+    display: flex;
+    background-color: navy;
+    color: white;
+    border: none;
+    width: 300px;
+    border-radius: .5rem;
+    height: 50px;
+    font-size: 1.2rem;
     margin-bottom: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+.grid-container {
+    min-width: 1024px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+.grid-container img {
+    width: 100%;
+    height: auto;
+}
+.right {
+    text-align: right;
+}
+.grid-left {
+    grid-column: 1/4;
+}
+.grid-right {
+    grid-column: 4/7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.full-width img {
+    min-width: 1024px;
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+.full-width h1 {
+    color: white;
+    padding: 5px;
+    background-color: rgb(0, 0, 0, 0.4);
+    position: absolute;
+    top: 280px;
+    left: 30px;
+    width: 400px;
+}
+.grid-item-left, .grid-item-right {
+    border: 1px solid #ccc;
+    padding: 20px;
+}
+.grid-item-left {
+    grid-column: 1/4;
+    margin: 1rem;
+}
+.grid-item-right {
+    grid-column: 4/7;
+    margin: 1rem;
+}
+.newsletter form {
+    width: auto;
+    margin: 1rem;
 }

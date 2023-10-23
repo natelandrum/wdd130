@@ -10,103 +10,104 @@
 
 </head>
 <body>
-    <header>
-        <img src="images/logo.webp" alt="Whitewater Rafting Logo">
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About Us</a>
-            <a href="trips.html">Trips</a>
-            <a href="#">Contact Us</a>
-        </nav>
-    </header>
-    <main>
-        <div class="hero">
-            <img src="images/hero.webp" alt="Hero Image">
-            <h1>Whitewater Rafting Inc.</h1>
-            <article>
-                <img src="images/customer.webp" alt="Happy Client">
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae fuga vel, ullam voluptatem temporibus tempore sequi aperiam sed doloremque sunt.
-                </p>
-            </article>
-            <div class="flex-container">
-                <h2>Contact Information</h2>
-                <div class="contact-info">
-                    <p>1234 Main Street<br>Anytown, USA 12345</p>
-                
-                    <p>Phone: 1-800-555-5555<br>Fax: 1-800-555-5556</p>
+    <div class="width-1024">
+        <header>
+            <img src="images/logo.webp" alt="Whitewater Rafting Logo">
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="trips.html">Trips</a>
+                <a href="#">Contact Us</a>
+            </nav>
+        </header>
+        <main>
+            <div class="hero">
+                <img src="images/hero.webp" alt="Hero Image">
+                <h1>Whitewater Rafting Inc</h1>
+                <article>
+                    <img src="images/customer.webp" alt="Happy Client">
+                    <p>
+                        WhiteWater Rafting Inc is the premier destination for exhilarating river adventures, offering unparalleled thrills amidst breathtaking natural landscapes. With expert guides, top-of-the-line equipment, and a commitment to safety, we provide an unforgettable rafting experience for adventure enthusiasts of all levels.                </p>
+                </article>
+                <div class="flex-container">
+                    <h2>Contact Information</h2>
+                    <div class="contact-info">
+                        <p>1234 Main Street<br>Anytown, USA 12345</p>
+                    
+                        <p>Phone: 1-800-555-5555<br>Fax: 1-800-555-5556</p>
+                    </div>
+                    <p>Email: whitewater-rafting-inc@wwr.com</p>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d212271.40072285046!2d-84.42013055!3d33.7673675!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f5045d6993098d%3A0x66fede2f990b630b!2sAtlanta%2C%20GA%2C%20USA!5e0!3m2!1sen!2smx!4v1697005907392!5m2!1sen!2smx" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
-                <p>Email: whitewater-rafting-inc@wwr.com</p>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d212271.40072285046!2d-84.42013055!3d33.7673675!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f5045d6993098d%3A0x66fede2f990b630b!2sAtlanta%2C%20GA%2C%20USA!5e0!3m2!1sen!2smx!4v1697005907392!5m2!1sen!2smx" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
-        </div>
-        <div class="horizontal-flex">
-            <h2>Employees</h2>
+            <div class="horizontal-flex">
+                <h2>Employees</h2>
+                <div>
+                    <figure>
+                        <img src="images/employee-1.webp" alt="Employee 1">
+                        <figcaption>John Doe</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/employee-2.webp" alt="Employee 2">
+                        <figcaption>Jane Doe</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/employee-3.webp" alt="Employee 3">
+                        <figcaption>John Smith</figcaption>
+                    </figure>
+                    
+                </div>
+            </div>
             <div>
-                <figure>
-                    <img src="images/employee-1.webp" alt="Employee 1">
-                    <figcaption>John Doe</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/employee-2.webp" alt="Employee 2">
-                    <figcaption>Jane Doe</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/employee-3.webp" alt="Employee 3">
-                    <figcaption>John Smith</figcaption>
-                </figure>
-                
+                <form id="contact">
+                    <fieldset>
+                        <legend>Contact Us</legend>
+                        <div class="form-item column2">
+                            <label for="fullname">Full Name:</label>
+                            <input type="text" name="fullname" id="fullname">
+                        </div>
+                        <div class="form-item column2">
+                            <label for="useremail">Email:</label>
+                            <input type="email" name="useremail" id="useremail">
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Reason for Contact</legend>
+                        <div class="form-item">
+                            <div class="radio">
+                                <label for="reason1">General Inquiry</label>
+                                <input type="radio" name="reason" id="reason1">
+                                
+                            </div>
+                            <div class="radio">
+                                <label for="reason2">Reservation Question</label>
+                                <input type="radio" name="reason" id="reason2">
+                            </div>
+                            <div class="radio">
+                                <label for="reason3">Website Suggestion</label>
+                                <input type="radio" name="reason" id="reason3">
+                            </div>
+                        </div>
+                        <label class="form-item" for="message">Message:</label>
+                        <textarea name="message" id="message" rows="4" placeholder="Enter your message here."></textarea>
+                    </fieldset>
+                        <div class="form-item column1">
+                            <label for="newsletter">Please subscribe me to the monthly newsletter.</label>
+                            <input type="checkbox" name="newsletter" id="newsletter">
+                        </div>
+                    <button type="submit">Send Message</button>
+                </form>
             </div>
-        </div>
-        <div>
-            <form>
-                <fieldset>
-                    <legend>Contact Us</legend>
-                    <div class="form-item column2">
-                        <label for="fullname">Full Name:</label>
-                        <input type="text" name="fullname" id="fullname">
-                    </div>
-                    <div class="form-item column2">
-                        <label for="useremail">Email:</label>
-                        <input type="email" name="useremail" id="useremail">
-                    </div>
-                </fieldset>
-                <fieldset>
-                    <legend>Reason for Contact</legend>
-                    <div class="form-item">
-                        <div class="radio">
-                            <label for="reason1">General Inquiry</label>
-                            <input type="radio" name="reason" id="reason1">
-                            
-                        </div>
-                        <div class="radio">
-                            <label for="reason2">Reservation Question</label>
-                            <input type="radio" name="reason" id="reason2">
-                        </div>
-                        <div class="radio">
-                            <label for="reason3">Website Suggestion</label>
-                            <input type="radio" name="reason" id="reason3">
-                        </div>
-                    </div>
-                    <label class="form-item" for="message">Message:</label>
-                    <textarea name="message" id="message" rows="4" placeholder="Enter your message here."></textarea>
-                </fieldset>
-                    <div class="form-item column1">
-                        <label for="newsletter">Please subscribe me to the monthly newsletter.</label>
-                        <input type="checkbox" name="newsletter" id="newsletter">
-                    </div>
-                <button type="submit">Send Message</button>
-            </form>
-        </div>
-    </main>
-    <footer>
-        <a href="images/wireframe.webp">Contact Us Wireframe</a>
-        <p>©️2023 Whitewater Rafting Inc. | Nathan Ray Landrum</p>
-        <nav class="social">
-            <a href="https://facebook.com"><img src="images/facebook.svg" alt="Facebook"></a>
-            <a href="https://twitter.com"><img src="images/twitter.svg" alt="Twitter"></a>
-            <a href="https://instagram.com"><img src="images/instagram.svg" alt="Instagram"></a>
-        </nav>
-    </footer>
+        </main>
+        <footer>
+            <a href="images/contact-wireframe.webp">Contact Us Wireframe</a>
+            <p>©️2023 Whitewater Rafting Inc. | Nathan Ray Landrum</p>
+            <nav class="social">
+                <a href="https://facebook.com"><img src="images/facebook.svg" alt="Facebook"></a>
+                <a href="https://twitter.com"><img src="images/twitter.svg" alt="Twitter"></a>
+                <a href="https://instagram.com"><img src="images/instagram.svg" alt="Instagram"></a>
+            </nav>
+        </footer>
+    </div>
 </body>
 </html>
